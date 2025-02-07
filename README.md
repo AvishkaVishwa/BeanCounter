@@ -27,6 +27,17 @@ This is a **fork of the original BeanCounter project** by Nick Poole. The **Bean
 ```sh
 git clone https://github.com/YourGitHubUsername/BeanCounter.git
 cd BeanCounter
+```
 
-##🔥 Flash the ATtiny861 Using AVRDude
+## Flash the ATtiny861 Using AVRDude
+```sh   
+avrdude -c usbasp -p t861 -U flash:w:BeanCounter_V10.ino.hex:i
+```
+
+## 🛠️ Modify and Customize
+
+Open the project in Arduino IDE
+Install Spence Konde's ATTinyCore for ATtiny861V-10MU
+Adjust settings (tape pitch, counting mode, etc.) in EEPROM
+
 
